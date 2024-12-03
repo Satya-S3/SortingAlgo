@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>BinarySearch</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="container">
+            <h1>Binary Search</h1>
+
+            
+            <div class="range-slider">
+                  <span class="slider-track"></span>
+                  <input type="range" class="min-val" min="0" max="100" value="0" oninput="slideMin()">
+                  <input type="range" class="max-val" min="0" max="100" value="100" oninput="slideMax()">
+                  <div class="tooltip min-tooltip"></div>
+                  <div class="tooltip max-tooltip"></div>
+            </div>
+
+            <input type="number" id="search" onchange="updateValue(); update()" placeholder="Enter a number to search..." />
+      
+            <p class="para">Does Your Number Greater than <span id="mid"></span> ?</p>
+            <h2 class="found">YOU GOT THE NUMBER</h2>
+            <h2 class="notfound">YOU NOOB DON'T NO WHICH IS GREATER OR SMALLER</h2>
+            <button class="yes">YES</button>
+            <button class="no">NO</button>
+
+            <div class="refershDiv">
+                  <button class="refresh" onclick="location.reload()">TRY AGAIN</button>
+            </div>
+            
+      
+            
+      </div>
+
+      <script src="app.js"></script>
+</body>
+</html>

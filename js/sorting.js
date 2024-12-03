@@ -61,6 +61,7 @@ speedInput.addEventListener('input', function(){
 
 
 createNewArray();
+
 function createNewArray(noOfBars = 60) {
     const container = document.querySelector("#container");
     container.innerHTML = '';
